@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="BookStore2.Login1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Book Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="CSS/myStyle.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+         li a {
+               display: block;
+               color: white;
+               text-align: center;
+               padding: 14px 16px;
+               text-decoration: none;
+         }
+
+          li a:hover {
+                background-color: #111;
+          }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
